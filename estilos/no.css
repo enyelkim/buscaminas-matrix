@@ -1,0 +1,51 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+
+body p {
+  font-family: 'Supermercado One', cursive;
+  font-size: min(50px, 20vw);
+  color: white;
+}
+
+#css-selector {
+  background: linear-gradient(236deg, #26d723, #1f7a2e, #c1b7a6);
+  background-size: 600% 600%;
+  -webkit-animation: gradient 0s ease infinite;
+  -moz-animation: gradient 0s ease infinite;
+  -o-animation: gradient 0s ease infinite;
+  animation: gradient 0s ease infinite;
+}
+@-webkit-keyframes gradient {
+  0%{background-position:15% 0%}
+  50%{background-position:86% 100%}
+  100%{background-position:15% 0%}
+}
+@-moz-keyframes gradient {
+  0%{background-position:15% 0%}
+  50%{background-position:86% 100%}
+  100%{background-position:15% 0%}
+}
+@-o-keyframes gradient {
+  0%{background-position:15% 0%}
+  50%{background-position:86% 100%}
+  100%{background-position:15% 0%}
+}
+@keyframes gradient {
+  0%{background-position:15% 0%}
+  50%{background-position:86% 100%}
+  100%{background-position:15% 0%}
+}
+
