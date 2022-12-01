@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+  <link href="./estilos/styles.css" rel="stylesheet" type="text/css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pagina</title>
+
+</head>
+
+<body>
+
+  <nav class="nav-bar">
+    <ul class="lista-nav">
+      <li class="lista-nav-item">
+        <a href="./index.html">Inicio</a>
+      </li>
+      <li class="pagina-actual">
+        <p>pagina</p>
+      </li>
+      <li class="lista-nav-item">
+        <a href="./juego.html">Juego</a>
+      </li>
+      <li class="lista-nav-item">
+        <a href="./about.html">Sobre mí</a>
+      </li>
+      <li class="lista-nav-item">
+        <a href="./contact.html">Contacto</a>
+      </li>
+    </ul>
+  </nav>
+
+  <main class="main-content">
+
+    <h1 class="pagina-header">¿Cómo se juega al BUSCAMINAS?</h1>
+
+    <article class="pagina-article">
+        <h2 class="pagina-article-header">Lo básico.</h2>
+        <p class="pagina-article-content">
+          El juego consiste en despejar todas las casillas de una pantalla que no oculten una mina.
+          Algunas casillas tienen un número, este número indica las minas que son en todas las casillas
+            circundantes. Así, si una casilla tiene el número 3, significa que de las ocho casillas que hay 
+            alrededor (si no es en una esquina o borde) hay 3 con minas y 5 sin minas. Si se descubre una casilla 
+            sin número indica que ninguna de las casillas vecinas tiene mina y estas se descubren automáticamente.
+        </p>
+    </article>
+
+    <article class="pagina-article">
+        <h2 class="pagina-article-header">Ganar o perder.</h2>
+        <p class="pagina-article-content">
+          Si se descubre una casilla con una mina se pierde la partida. 
+          Se puede poner una marca en las casillas que el jugador piensa que hay minas para ayudar a
+          descubrir la que están cerca, lo que sería "poner banderita" digamos. Eso se hace con <em>click derecho</em>
+          del ratón.
+          La partida finaliza cuando liberas todas las casillas que no tienen mina, 
+          o cuando por error haces click sobre una casilla minada.
+        </p>
+    </article>
+
+    <article class="pagina-article">
+      <h2 class="pagina-article-header">¿No te has enterao de na"?</h2>
+      <p class="pagina-article-content">
+          Ni te rayes, te dejo un videito fachero para que te orientes mejor. 
+      </p>
+      <div>
+        <iframe width="560" height="315" 
+          class="video"
+          src="https://www.youtube.com/embed/Oes6IrpctJ0" 
+          title="YouTube video player" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen></iframe>
+      </div>
+  </article>
+  </main>
+</body>
+<footer>
+  <div class="container">
+    <small>Hecho por <span>❤</span> <a href="http://github.com/enyelkim" target="_blank">Noelia Fernández <span>❤</span> </a>
+    </small>
+  </div>
+</footer>
+</html>

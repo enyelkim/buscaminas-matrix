@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+  <link href="./estilos/styles.css" rel="stylesheet" type="text/css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NORMAS</title>
+
+</head>
+
+<body>
+
+  <nav class="nav-bar">
+    <ul class="lista-nav">
+      <li class="lista-nav-item">
+        <a href="./index.html">Inicio</a>
+      </li>
+      <li class="lista-nav-item">
+        <a href="./normas.html">Normas</a>
+      </li>
+      <li class="lista-nav-item">
+        <a href="./juego.html">Juego</a>
+      </li>
+      <li class="lista-nav-item">
+        <a href="./about.html">Sobre mí</a>
+      </li>
+      <li class="pagina-actual">
+        <p>Contacto</p>
+      </li>
+    </ul>
+  </nav>
+
+  <main class="main-content">
+
+    <h1 class="pagina-header">¿Cómo se juega al BUSCAMINAS?</h1>
+
+    <article class="pagina-article">
+      <form class="formulario-contacto">
+        <div class="container">
+          <h2>Contáctame!</h2>
+          <ul>
+            <li>
+              <select>
+                <option>---- Elige el motivo de tu consulta o mensaje ----</option>
+                <option>Motivo personal</option>
+                <option>Motivo profesional</option>
+                <option>Otro</option>
+              </select>
+            </li>
+            <li>
+              <div class="grid grid-2">
+                <input type="text" placeholder="Nombre" required>
+                <input type="text" placeholder="Apellido" required>
+              </div>
+            </li>
+            <li>
+              <div class="grid grid-2">
+                <input type="email" placeholder="E-mail" required>
+                <input type="tel" placeholder="Teléfono">
+              </div>
+            </li>
+            <li>
+              <textarea placeholder="Escribe tu mensaje..." required></textarea>
+            </li>
+            <li>
+              <input type="checkbox" id="terms">
+              <label for="terms">He leído los términos y acepto <a href="">los términos y condiciones.</a></label>
+            </li>
+            <li>
+              <div class="grid grid-3">
+                <div class="obligatorio">Campos obligatorios</div>
+                <button class="boton-grid" type="enviar">
+                  <span class="atras">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/email-icon.svg" alt="">
+                  </span>
+                  <span class="front">ENVIAR</span>
+                </button>
+                <button class="boton-grid" type="reinicio">
+                  <span class="atras">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/eraser-icon.svg" alt="">
+                  </span>
+                  <span class="front">REINICIAR</span>
+                </button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </form>
+    </article>
+  </main>
+</body>
+
+<footer>
+  <div class="container">
+    <small>Hecho por <span>❤</span> <a href="http://github.com/enyelkim" target="_blank">Noelia Fernández <span>❤</span>
+      </a>
+    </small>
+  </div>
+</footer>
+
+</html>

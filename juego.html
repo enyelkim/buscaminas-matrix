@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="./estilos/styles.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUEGO</title>
+
+  </head>
+
+  <nav class="nav-bar">
+    <ul class="lista-nav">
+      <li class="lista-nav-item">
+        <a href="./index.html">Inicio</a>
+      </li>
+      <li class="lista-nav-item">
+        <a href="./normas.html">Normas</a>
+      </li>
+      <li class="pagina-actual">
+        <p>Juego</p>
+      </li>
+      <li class="lista-nav-item">
+        <a href="./about.html">Sobre mí</a>
+      </li>
+      <li class="lista-nav-item">
+        <a href="./contact.html">Contacto</a>
+      </li>
+    </ul>
+  </nav>
+  <main class="main-content">
+
+    <h1 class="juego-header">DISFRUTA EL JUEGO DEL BUSCAMINAS</h1>
+    <p class="juego-info">¿Recuerdas? Click para descubrir una celda y
+      click derecho para marcar una mina con banderita. Para desmarcar
+    bandera, click derecho encima de la casilla marcada. 
+    Para cambio de nivel, elige el menú y confirma en 
+    el botón de Neo :)</p> <br>
+
+
+  <body onload="setNivel(configuracion);">
+    <div>
+      <select id="nivel">
+        <option value="0">Fácil</option>
+        <option value="1">Intermedio</option>
+        <option value="2">Experto</option>
+      </select>
+
+      <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+      <span>Minas restantes:</span>
+      <span id="conteoBanderas"> </span>
+      <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+      <span>Tiempo:</span>
+      <span id="temporizador"> </span>
+      <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+    </div>
+
+    <div id="carita" class="carita" onmousedown="neoDerrota();" onmouseup="neoV();"></div>
+    <div id="contenido-juego"> 
+      <div id="victoria">
+        <b>HAS GANADO CRACKKKKKKKKKKKKKKK.</b>
+      </div>
+
+      <div id="derrota">
+        <b> Has perdido:( ¿qué tal si lo intentas de nuevo? </b>
+      </div>
+      <canvas id="buscaminas"></canvas>
+      <script type="text/javascript" src="./javascript/script.js"></script>
+
+    </div>
+  </body>
+  </main>
+
+  <footer>
+    <div class="container">
+      <small>Hecho por <span>❤</span> <a href="http://github.com/enyelkim" target="_blank">Noelia Fernández
+          <span>❤</span> </a>
+      </small>
+    </div>
+  </footer>
+
+</html>
